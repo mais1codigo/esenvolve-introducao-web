@@ -1,0 +1,182 @@
+/* Cores gerais e layout */
+body {
+    background: #EAEAEA;
+    color: #333;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+a, .highlight {
+    color: #FF6347;
+}
+
+p {
+    text-indent: 1em;
+    line-height: 1.5;
+}
+
+/* Títulos */
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-left: 1em;
+}
+
+h2, h3 {
+    text-align: right;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+/* Seções específicas */
+.summary, .main-section p {
+    text-align: right;
+}
+
+.intro-section {
+    height: 550px;
+}
+
+#design-archives {
+    display: none;
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menus */
+.sidebar-menu {
+    list-style: none;
+    text-align: center;
+}
+
+.sidebar-menu li {
+    margin-bottom: 1em;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
+
+footer a {
+    flex: 1 1 150px;
+    text-align: center;
+    margin: 0.5em;
+    border: 2px solid #333;
+    padding: 0.5em;
+    color: #333;
+    background: #f5f5f5;
+    text-decoration: none;
+}
+
+/* Layout adicional */
+.page-wrapper {
+    position: relative;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+}
+
+.design-menu {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    padding: 0 2%;
+}
+
+abbr {
+    font-variant: small-caps;
+}
+
+/* Seções de benefícios e participação */
+.benefits-section, .participation-section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+}
+
+.benefits-section .text, .participation-section .item {
+    width: 70%;
+}
+
+/* Links */
+a:hover {
+    color: #FF8567;
+}
+
+a:visited {
+    font-weight: normal;
+}
+
+/* Primeira letra do parágrafo principal */
+.main-section p:first-of-type::first-letter {
+    font-size: 300%;
+    font-family: 'Georgia', serif;
+    float: left;
+    margin-right: 0.1em;
+}
+
+.design-menu li {
+    border-top: 1px solid #333;
+}
+
+.design-menu li:last-child {
+    border-bottom: 1px solid #333;
+}
+
+/* Layout Mobile */
+@media (max-width: 768px) {
+    .design-menu {
+        position: static;
+        padding: 0;
+    }
+
+    .explanation {
+        border-right: none;
+        margin-right: 0;
+    }
+
+    .benefits-section, .participation-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    p {
+        text-indent: 0;
+    }
+}
+
+/* Layout de Impressão */
+@media print {
+    body {
+        font-family: 'Times New Roman', serif;
+    }
+
+    header {
+        background: #fff;
+        color: #000;
+    }
+}
