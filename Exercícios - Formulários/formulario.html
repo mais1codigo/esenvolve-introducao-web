@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Pesquisa de Satisfação</title>
+    <style>body{
+        background-color: bisque
+    };
+        </style>
+</head>
+<body>
+    <h1>Formulário de Pesquisa de Satisfação</h1>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Pesquisa</legend>
+            <p>Como você classificaria o nosso serviço?</p>
+            <label><input type="radio" name="service_rating" value="excelente" required> Excelente</label><br>
+            <label><input type="radio" name="service_rating" value="bom"> Bom</label><br>
+            <label><input type="radio" name="service_rating" value="regular"> Regular</label><br>
+            <label><input type="radio" name="service_rating" value="ruim"> Ruim</label><br><br>
+
+            <p>Você recomendaria nosso serviço a amigos ou familiares?</p>
+            <label><input type="radio" name="recommendation" value="sim" required> Sim</label><br>
+            <label><input type="radio" name="recommendation" value="não"> Não</label><br><br>
+
+            <label for="feedback">Seu feedback é importante, escolha um aspecto a melhorar:</label>
+            <select id="feedback" name="feedback">
+                <option value="atendimento">Atendimento</option>
+                <option value="preço">Preço</option>
+                <option value="qualidade">Qualidade</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+        </fieldset>
+        <label><input type="checkbox" name="share_permission"> Autorizo compartilhar minha resposta com terceiros.</label><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
