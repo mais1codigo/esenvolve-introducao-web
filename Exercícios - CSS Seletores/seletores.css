@@ -1,0 +1,36 @@
+
+/* Cor padrão do link será vermelha */
+a {
+    color: red;
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Quando o link for sobreposto pelo mouse, mudará para a cor limão */
+a:hover {
+    color: lemon;
+}
+
+/* Por padrão, a classe .destaque utilizará a fonte Arial */
+.destaque {
+    font-family: Arial, sans-serif;
+}
+
+/* Se aplicada a um parágrafo, ficará em negrito */
+p.destaque {
+    font-weight: bold;
+}
+
+/* Se aplicada a um <strong>, ficará em vermelho */
+strong.destaque {
+    color: red;
+}
+
+/* Todos os parágrafos terão a fonte Arial */
+p {
+    font-family: Arial, sans-serif;
+}
+
+/* Parágrafos logo após h1 ficarão em negrito */
+h1 + p {
+    font-weight: bold;
+}
