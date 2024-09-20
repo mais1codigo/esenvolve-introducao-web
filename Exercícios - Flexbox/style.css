@@ -1,0 +1,143 @@
+/* Cores gerais */
+body {
+    background-color: #EAEAEA;
+    color: #333;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+a, .highlight {
+    color: #FF6347;
+}
+
+p {
+    text-indent: 1em;
+    line-height: 1.5;
+}
+
+/* Títulos */
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-left: 1em;
+}
+
+h2, h3 {
+    text-align: right;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+/* Seções específicas */
+.summary, .main-section p {
+    text-align: right;
+}
+
+.intro-section {
+    height: 550px;
+}
+
+#design-archives {
+    display: none;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menus */
+.sidebar-menu {
+    list-style: none;
+    text-align: center;
+}
+
+.sidebar-menu li {
+    margin-bottom: 1em;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
+
+footer a {
+    flex: 1 1 150px;
+    text-align: center;
+    margin: 0.5em;
+    border: 2px solid #333;
+    padding: 0.5em;
+    color: #333;
+    background-color: #f5f5f5;
+    text-decoration: none;
+}
+
+/* Layout adicional */
+.page-wrapper {
+    position: relative;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+}
+
+.design-menu {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    padding: 0 2%;
+}
+
+/* Abreviações */
+abbr {
+    font-variant: small-caps;
+}
+
+/* Seções de benefícios e participação */
+.benefits-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.benefits-section .text {
+    width: 70%;
+}
+
+.benefits-section .title {
+    width: 30%;
+    text-align: right;
+}
+
+.participation-section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+}
+
+.participation-section .item {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
