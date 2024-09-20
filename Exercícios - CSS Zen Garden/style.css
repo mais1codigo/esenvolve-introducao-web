@@ -1,0 +1,8 @@
+body {
+    background-color: #EAEAEA; /* Cor de fundo */
+    color: #333333; /* Cor da fonte */
+}
+
+a, .highlight {
+    color: #FF6347; /* Cor de destaque */
+}
